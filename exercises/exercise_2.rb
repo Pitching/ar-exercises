@@ -12,8 +12,8 @@ puts "----------"
 
 # Your code goes here ...
 
-@store1 = Store.first
+@store1 = Store.find_by(id: 1)
 @store2 = Store.second
+puts @store1
 
-@store1.name = "Walmart"
-@store1.save
+@store1.update(name: "Walmart")
